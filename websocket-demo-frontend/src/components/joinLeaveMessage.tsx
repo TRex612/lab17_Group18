@@ -15,7 +15,7 @@ export default function JoinLeaveMessage(Props : JoinLeaveMessageProps) {
                             <span className="font-bold">{Props.sender}</span>
                             <span> has joined the chat!</span>
                             <br/>
-                            {Props.timestamp}
+                            <span>{Props.timestamp}</span>
                         </div>
                     </div>
 
@@ -24,6 +24,8 @@ export default function JoinLeaveMessage(Props : JoinLeaveMessageProps) {
                         <div className="bg-red-300 p-3 rounded-lg w-full text-center max-w-full">
                             <span className="font-bold">{Props.sender}</span>
                             <span> has left the chat</span>
+                            <br/>
+                            <span>{Props.timestamp}</span>
                         </div>
                     </div>
                 )

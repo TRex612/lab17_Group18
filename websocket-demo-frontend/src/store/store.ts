@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import webSocketReducer from './Slices/webSocketSlice'
 import usernameReducer from './Slices/usernameSlice'
+import numUserReducer from './Slices/numUserSlice'
 export const store = configureStore({
     reducer: {
         webSocket : webSocketReducer,
-        username : usernameReducer
+        username : usernameReducer,
+        numUser : numUserReducer,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
         serializableCheck: false,
